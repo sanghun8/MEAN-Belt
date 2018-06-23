@@ -1,0 +1,23 @@
+<a [routerLink]="['/pets']">Home</a>
+<div >
+<h1>Pet Shelter</h1>
+<h3>Details about {{this.pets.name}} </h3>
+<div >
+Pet Type: {{this.pets.type}}
+<br>
+
+Description: {{this.pets.description}}
+<br>
+
+Skills: {{this.pets.skill1}} 
+{{this.pets.skill2}} 
+{{this.pets.skill3}}
+<br>
+Likes: 
+<br>
+
+<!-- <button [routerLink]="['/pets/edit', a['_id']]">Like this pet</button> -->
+
+
+<button (click)="deletePet(this.pets.id)">Adopt this pet!</button></div></div>
+
